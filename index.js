@@ -1,18 +1,28 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+      const seenNUmbers = {};
+      for (const number of array) {
+        const complement = target - number;
+        if (comlement in seenNUmbers) return true;
+        seenNUmbers[number] = true;
+      }
+
+      return false;
 }
 
 /* 
   Write the Big O time complexity of your function here
 */
 
-/* 
-  Add your pseudocode here
-*/
+    function findSock(array) {
+      for (const item of array) {
+        if (item === "sock") return "sock";
+      }
+    }
 
-/*
-  Add written explanation of your solution here
-*/
+    function findSock(object) {
+      if (object.sock) return "sock";
+    }
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
